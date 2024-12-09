@@ -1,18 +1,16 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
-
 <img src="map.png" width="600" height="450" />
 
 ## Cloning
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/jonna-t1/OpenStreetMapProj.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/jonna-t1/OpenStreetMapProj.git --recurse-submodules
 ```
 
 ## Dependencies for Running Locally
@@ -26,9 +24,18 @@ git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-subm
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same instructions as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
-* IO2D
-  * Installation instructions for all operating systems can be found [here](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md)
+* IO2D for Linux systems
+  * Pre-installed under folder P0267_RefImpl.
   * This library must be built in a place where CMake `find_package` will be able to find it
+  * Follow below instructions to install IO2D...
+  
+  `cd P0267_RefImpl`</br>
+	`mkdir Debug` </br>
+	`cd Debug`</br>
+	`cmake -DCMAKE_BUILD_TYPE=Debug ..`</br>
+	`cmake --build .`</br>
+	`sudo make install`</br>
+  * Installation instructions for all operating systems can be found [here](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md)
  
 
 ## Compiling and Running
@@ -52,6 +59,7 @@ Or to specify a map file:
 ```
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
+[Download maps here](https://www.openstreetmap.org/#map=5/54.91/-3.43)
 
 ## Testing
 
