@@ -59,6 +59,11 @@ Or to specify a map file:
 ```
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
+
+## How to use Application
+
+Once the program is compiled and run, it asks the user for 4 coordinates ranging from 0 to 99: start x, start y, end x and end y. Then it calculates the distance between these two points and renders the road from the start point to the end on the map. The map in .osm format must be named map.osm and placed in the project directory. A sample map is attached to the repo, but you can download your own from the page below.
+
 [Download maps here](https://www.openstreetmap.org/#map=5/54.91/-3.43)
 
 ## Testing
@@ -82,7 +87,7 @@ The testing executable is also placed in the `build` directory. From within `bui
     ```
     brew install pkg-config
     ```
- * For Ubuntu Linux IO2D installation errors, follow the given steps:
+ * For Ubuntu Linux IO2D installation errors (shouldn't be any since its been pre-installed - see IO2D dependancies), follow the given steps:
    ```
 	sudo apt update
 	sudo apt install build-essential
