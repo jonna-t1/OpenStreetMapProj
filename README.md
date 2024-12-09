@@ -28,6 +28,15 @@ git clone https://github.com/jonna-t1/OpenStreetMapProj.git --recurse-submodules
   * Pre-installed under folder P0267_RefImpl.
   * This library must be built in a place where CMake `find_package` will be able to find it
   * Follow below instructions to install IO2D...
+
+  ```
+	sudo apt update
+	sudo apt install build-essential
+	sudo apt install cmake
+	sudo apt install libcairo2-dev
+	sudo apt install libgraphicsmagick1-dev
+	sudo apt install libpng-dev
+  ```
   
   `cd P0267_RefImpl`</br>
 	`mkdir Debug` </br>
