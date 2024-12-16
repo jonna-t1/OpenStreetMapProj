@@ -16,6 +16,7 @@ git clone https://github.com/jonna-t1/OpenStreetMapProj.git --recurse-submodules
 ## Dependencies for Running Locally
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
+  * `sudo apt install cmake`
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
   * Linux: make is installed by default on most Linux distros
   * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
